@@ -1,12 +1,14 @@
-# EC3 Concrete Carbon Comparison
-A demo app that utlizes the EC3 Python Wrapper
+# YourDesk University Streamlit Demo App
+A demo app that utlizes the EC3 Python Wrapper to search and visualize concrete mixes.
 ____________________________________
 ## Streamlit deployment
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://jbf1212-example-app-ec3-wrapper-ec3-app-bd2ea4.streamlit.app/)
 
 ____________________________________
-## Further Info on ec3-python-wrapper
+## Further Info on YourDesk University and the ec3-python-wrapper
+
+[YourDesk University](https://yourdeskuniversity.com/) is a place for the AEC Tech community to connect and share knowledge remotely. 
 
 The EC3 Python Wrapper is an open source python wrapper for the [Building Transparency EC3](https://buildingtransparency.org/ec3) API.
 
