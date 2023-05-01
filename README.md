@@ -3,7 +3,7 @@ A demo app that utlizes the EC3 Python Wrapper to search and visualize concrete 
 ____________________________________
 ## Streamlit deployment
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://jbf1212-example-app-ec3-wrapper-ec3-app-bd2ea4.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://jbf1212-ydu-streamlit-demo-demo-app-myhuqe.streamlit.app/)
 
 ____________________________________
 ## Further Info on YourDesk University and the ec3-python-wrapper
