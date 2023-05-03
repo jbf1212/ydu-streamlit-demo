@@ -1,4 +1,6 @@
 # YourDesk University Streamlit Demo App
+<p align="center"><img width="200" src="https://github.com/jbf1212/ydu-streamlit-demo/blob/master/images/yourdesk_logo.png"</p>
+                       
 A demo app that utlizes the EC3 Python Wrapper to search and visualize concrete mixes.
 ____________________________________
 ## Streamlit deployment
