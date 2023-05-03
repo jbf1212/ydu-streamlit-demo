@@ -99,22 +99,21 @@ st.markdown(
 ######################################
 # Have user enter data
 ######################################
-with st.form(key="concrete_query"):
-    with st.sidebar.form(key="Form1"):
-        postal_code = st.text_input("Enter a 5-digit postal code")
-        miles = st.number_input(
-            "Miles from region provided", min_value=0, max_value=500, value=20, step=10
-        )
-        conc_strength = st.slider(
-            label="Set your concrete strength at 28 days (psi)",
-            min_value=0,
-            max_value=12000,
-            value=5000,
-            step=100,
-        )
-        weight_type = st.checkbox("Lightweight")
+with st.sidebar.form(key="Form1"):
+    postal_code = st.text_input("Enter a 5-digit postal code")
+    miles = st.number_input(
+        "Miles from region provided", min_value=0, max_value=500, value=20, step=10
+    )
+    conc_strength = st.slider(
+        label="Set your concrete strength at 28 days (psi)",
+        min_value=0,
+        max_value=12000,
+        value=5000,
+        step=100,
+    )
+    weight_type = st.checkbox("Lightweight")
 
-        submitted = st.form_submit_button(label="Search Concrete Materials 🔎")
+    submitted = st.form_submit_button(label="Search Concrete Materials 🔎")
 
 conc_strength_str = str(conc_strength) + " psi"
 

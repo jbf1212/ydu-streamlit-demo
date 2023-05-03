@@ -101,34 +101,33 @@ st.markdown(
 ######################################
 # Have user enter data
 ######################################
-with st.form(key="concrete_query"):
-    with st.sidebar.form(key="Form1"):
-        st.markdown(
-            "This app is a demonstration of using the ec3-python-wrapper for querying the EC3 database."
-        )
+with st.sidebar.form(key="Form1"):
+    st.markdown(
+        "This app is a demonstration of using the ec3-python-wrapper for querying the EC3 database."
+    )
 
-        link = f'<a href="https://github.com/jbf1212/ec3-python-wrapper" style="color:#4A987F;">Link to ec3-python-wrapper repo</a>'
-        st.markdown(link, unsafe_allow_html=True)
-        st.markdown("***")
+    link = f'<a href="https://github.com/jbf1212/ec3-python-wrapper" style="color:#4A987F;">Link to ec3-python-wrapper repo</a>'
+    st.markdown(link, unsafe_allow_html=True)
+    st.markdown("***")
 
-        postal_code = st.text_input("Enter a 5-digit postal code")
-        miles = st.number_input(
-            "Miles from region provided", min_value=0, max_value=500, value=20, step=10
-        )
-        conc_strength = st.slider(
-            label="Set your concrete strength at 28 days (psi)",
-            min_value=0,
-            max_value=12000,
-            value=5000,
-            step=100,
-        )
-        weight_type = st.checkbox("Lightweight")
+    postal_code = st.text_input("Enter a 5-digit postal code")
+    miles = st.number_input(
+        "Miles from region provided", min_value=0, max_value=500, value=20, step=10
+    )
+    conc_strength = st.slider(
+        label="Set your concrete strength at 28 days (psi)",
+        min_value=0,
+        max_value=12000,
+        value=5000,
+        step=100,
+    )
+    weight_type = st.checkbox("Lightweight")
 
-        submitted = st.form_submit_button(label="Search Concrete Materials 🔎")
-        st.markdown(
-            '<span style="color:#094D6C;"> Note! Queries may take several minutes to run depending on the number of materials being returned. Max returned set to 2500.</span>',
-            unsafe_allow_html=True,
-        )
+    submitted = st.form_submit_button(label="Search Concrete Materials 🔎")
+    st.markdown(
+        '<span style="color:#094D6C;"> Note! Queries may take several minutes to run depending on the number of materials being returned. Max returned set to 2500.</span>',
+        unsafe_allow_html=True,
+    )
 
 conc_strength_str = str(conc_strength) + " psi"
 ######################################
